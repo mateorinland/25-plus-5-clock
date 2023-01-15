@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed&display=swap');
+
+body {
+  background: #f8a5c2;
+  font-family: 'Sofia Sans Semi Condensed', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  #container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .main-title {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    .length-control {
+      width: 250px;
+    }
+    button {
+      background: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+    }
+    .aligned-button,
+    .length-control {
+      display: inline-block;
+    }
+    .central-button {
+      margin: 0 10px;
+    }
+    .timer {
+      border: 5px solid black;
+      margin: 20px auto 10px auto;
+      width: 270px;
+      height: 190px;
+      border-radius: 15px;
+      position: relative;
+      .timer-wrapper {
+      position: absolute;
+      width: 190px;
+      height: 110px;
+      left: 50%;
+      top: 40%;
+      margin-left: -95px;
+      margin-top: -57px;
+      }
+      #time-left {
+        font-size: 80px;
+      }
+    }
+  }
+}
